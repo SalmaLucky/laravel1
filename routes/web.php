@@ -37,12 +37,12 @@ Route::group(['prefix'=>'/product'], function () {
 });
 //category
 Route::group(['prefix'=>'/category'], function () {
-    Route::post('/store','App\Http\Controllers\Backend\CategoryController@store')->name('store');
-    Route::get('/create','App\Http\Controllers\Backend\CategoryController@create')->name('create');
-    Route::get('/manage','App\Http\Controllers\Backend\CategoryController@index')->name('manage');
-    Route::get('/edit/{id}','App\Http\Controllers\Backend\CategoryController@edit')->name('edit');
-    Route::post('/update/{id}','App\Http\Controllers\Backend\CategoryController@update')->name('update');
-    Route::get('/delete/{id}','App\Http\Controllers\Backend\CategoryController@destroy')->name('delete');
+    Route::post('/store','App\Http\Controllers\Backend\CategoryController@store')->name('store-category');
+    Route::get('/create','App\Http\Controllers\Backend\CategoryController@create')->name('create-category');
+    Route::get('/manage','App\Http\Controllers\Backend\CategoryController@index')->name('manage-category');
+    Route::get('/edit/{id}','App\Http\Controllers\Backend\CategoryController@edit')->name('edit-category');
+    Route::post('/update/{id}','App\Http\Controllers\Backend\CategoryController@update')->name('update-category');
+    Route::get('/delete/{id}','App\Http\Controllers\Backend\CategoryController@destroy')->name('delete-category');
 
 });
 
